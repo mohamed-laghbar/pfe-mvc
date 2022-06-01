@@ -23,7 +23,7 @@ use app\core\Application;
 
   
 
-    <div class="container-fluid">
+    <div>
         <?php if (Application::$app->session->getFlash('success')) : ?>
             <div class="alert alert-success">
                 <?php   echo  Application::$app->session->getFlash('success'); ?>

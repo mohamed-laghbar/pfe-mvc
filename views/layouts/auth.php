@@ -17,7 +17,7 @@
     <link href="./css/Boostrap.css" rel="stylesheet" />
 </head>
   <body>
-    <div class="container-fluid">
+    <div >
         {{content}}
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
