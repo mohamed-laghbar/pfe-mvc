@@ -1,0 +1,17 @@
+{
+    "name": "youcode/pfe-mvc",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohamed-Laghbar",
+            "email": "simoghbaar@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    }
+}
