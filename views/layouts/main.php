@@ -12,15 +12,48 @@ use app\core\Application;
     <meta name="author" content="" />
     <title>02safe | Protect you whole life</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1295/1295141.png" />
     <!-- Font Awesome icons (free version)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">    <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="./css/Boostrap.css" rel="stylesheet" />
 </head>
   <body>
-
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <!-- <a class="navbar-brand"  href="#page-top"><img src="assets/img/navbar-logo.png"  wit alt="..." /></a> -->
+            <div class="h3">
+                <span class="text-primary">02</span><span class="text-white">safe</span><span
+                    class="text-primary">.com</span>
+            </div>
+            <button class="navbar-toggler w-25" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="bg-white fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Alarm Systems</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <button class="btn btn-primary fw-bold text-black ms-4">Call Us : 0661543451</button>
+            </div>
+        </div>
+    </nav>
   
 
     <div>
