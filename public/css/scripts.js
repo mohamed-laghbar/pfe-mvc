@@ -55,13 +55,6 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 
-$(document).ready(function(){
-    $('.cross').click(function() {
-       $('#form').modal('hide');
-   });   
-       
-   });
-
+document.getElementById('vid').play();
 
    
-   document.getElementsByTagName("h1")[0].style.fontSize = "80px";

@@ -31,8 +31,8 @@ $app->router->post('/shop', [AuthController::class, 'shop']);
 $app->router->get('/packages', [AuthController::class, 'packages']);
 $app->router->post('/packages', [AuthController::class, 'packages']);
 
-$app->router->get('/buildSystem', [AuthController::class, 'buildSystem']);
-$app->router->post('/buildSystem', [AuthController::class, 'buildSystem']);
+$app->router->get('/build-your-system', [AuthController::class, 'build_your_system']);
+$app->router->post('/build-your-system', [AuthController::class, 'build_your_system']);
 
 // $app->router->get('/contact', [SiteController::class, 'contact']);
 $app->router->get('/contact', [new SiteController(), 'contact']);
