@@ -84,15 +84,15 @@
     <div class="col-md-6 bg-white p-5 ">
       <div class="d-flex  flex-column">
       <p class="title-big fw-light" >How it works</p>
-      <p class="h5 fw-bold text-muted"><span class="text-danger h3 ">1-</span> CUSTOMIZE YOUR SYSTEM</p>
+      <p class="h4 text-primary"><span class="text-muted h3 ">1-</span> CUSTOMIZE YOUR SYSTEM</p>
       <p>Our experts will walk you through which security sensors and cameras your home needs and ship them to your front door in less than a week.</p>
 
 
-      <p class="h5 fw-bold text-muted"><span class="text-danger h3 ">2-</span> SET UP IN MINUTES</p>
+      <p class="h4 text-primary"><span class="text-muted h3 ">2-</span> SET UP IN MINUTES</p>
       <p>Install your system with no tools needed. Just plug it in. Or let one of our pros do it for you.</p>
 
 
-      <p class="h5 fw-bold text-muted"><span class="text-danger h3 ">3-</span> WE PROTECT YOUR HOME</p>
+      <p class="h4 text-primary"><span class="text-muted h3 ">3-</span> WE PROTECT YOUR HOME</p>
       <p>Sensors guard every room and entry point. If danger is detected, our monitoring center will call you and dispatch emergency response.</p>
 
 
