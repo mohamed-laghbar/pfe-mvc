@@ -21,6 +21,19 @@ $app = new Application(dirname(__DIR__), $config);
 
 // $app->router->get('/', 'home');
 $app->router->get('/', [new SiteController(), 'home']);
+
+$app->router->get('/products', [AuthController::class, 'products']);
+$app->router->post('/products', [AuthController::class, 'products']);
+
+$app->router->get('/shop', [AuthController::class, 'shop']);
+$app->router->post('/shop', [AuthController::class, 'shop']);
+
+$app->router->get('/packages', [AuthController::class, 'packages']);
+$app->router->post('/packages', [AuthController::class, 'packages']);
+
+$app->router->get('/buildSystem', [AuthController::class, 'buildSystem']);
+$app->router->post('/buildSystem', [AuthController::class, 'buildSystem']);
+
 // $app->router->get('/contact', [SiteController::class, 'contact']);
 $app->router->get('/contact', [new SiteController(), 'contact']);
 $app->router->post('/contact', [SiteController::class, 'handleContact']);
@@ -35,3 +48,4 @@ $app->router->get('/about', [TestController::class, 'about']);
 
 
 $app->run();
+
