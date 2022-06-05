@@ -1,11 +1,10 @@
-<header class="masthead"></header>
-<section class="page-section bg-light" id="services">
-    <div class="container-fluid">
+<section class="page-section  bg-light" id="services">
+    <div class="container-fluid ">
       <div class="text-center">
         
       </div>
       <div class="row  d-flex justify-content-center">
-      <div class="col-md-4 p-5 shadow-sm   bg-white" >
+      <div class="col-md-4 p-5 shadow-lg    bg-white" >
           
           <h2 class=" text-muted fw-light mb-5">The Haven</h2>
           <p class="text-muted ">
@@ -20,7 +19,7 @@
             </div>
         </div>
 
-       <div class="col-md-4  shadow-sm bg-white"  >
+       <div class="col-md-4  bg-white"  >
         <img class="" src="https://images.ctfassets.net/br4ichkdqihc/1g0pvZ5CJCmtHArFoorhjE/bb6b735c4fe01ed4144f3fca73c0b81b/HAVEN-SQ.jpg?w=800&h=800&q=50&fm=webp" height="650px" alt="">            
         </div>
 
@@ -35,7 +34,7 @@
         
       </div>
       <div class="row  d-flex justify-content-center">
-      <div class="col-md-4 p-5 shadow-sm   bg-white" >
+      <div class="col-md-4 p-5 shadow-lg   bg-white" >
           
           <h2 class=" text-muted fw-light mb-5">The Knox</h2>
           <p class="text-muted ">
@@ -49,7 +48,7 @@
             </div>
         </div>
 
-       <div class="col-md-4 shadow-sm bg-white" >
+       <div class="col-md-4  bg-white" >
         <img src="https://images.ctfassets.net/br4ichkdqihc/54E8HaRdRfJ2AfT0iAhvas/fc1073817633b783dca5bd2340012272/knox-13-w.jpg?w=800&h=640&q=50&fm=webp" width="650px" height="650px" alt="">            
         </div>
 
@@ -67,7 +66,7 @@
         
       </div>
       <div class="row  d-flex justify-content-center">
-      <div class="col-md-4 p-5 shadow-sm   bg-white" >
+      <div class="col-md-4 p-5 shadow-lg   bg-white" >
           
           <h2 class=" text-muted fw-light mb-5">The Hearth</h2>
           <p class="text-muted ">
@@ -81,7 +80,7 @@
             </div>
         </div>
 
-       <div class="col-md-4 shadow-sm bg-white" >
+       <div class="col-md-4  bg-white" >
         <img src="https://images.ctfassets.net/br4ichkdqihc/4CD7PFZJd0QbyOHofOK6nB/193f9a7f2081e86de1bd484490abb626/hearth-9-w.jpg?w=800&h=640&q=50&fm=webp" width="650px" height="650px" alt="">            
         </div>
 
@@ -100,7 +99,7 @@
         
       </div>
       <div class="row  d-flex justify-content-center">
-      <div class="col-md-4 p-5 shadow-sm   bg-white" >
+      <div class="col-md-4 p-5 shadow-lg   bg-white" >
           
           <h2 class=" text-muted fw-light mb-5">The Essentials</h2>
           <p class="text-muted ">
@@ -114,7 +113,7 @@
             </div>
         </div>
 
-       <div class="col-md-4 shadow-sm bg-white" >
+       <div class="col-md-4  bg-white" >
         <img src="https://images.ctfassets.net/br4ichkdqihc/2HlJaiXb03M9XJbE0CQDTS/0627f0a85e3e245fb61c31a6f377dabf/essentials-8-w.jpg?w=800&h=640&q=50&fm=webp" width="650px" height="650px" alt="">            
         </div>
 
@@ -133,7 +132,7 @@
         
       </div>
       <div class="row  d-flex justify-content-center">
-      <div class="col-md-4 p-5 shadow-sm   bg-white" >
+      <div class="col-md-4 p-5 shadow-lg  bg-white" >
           
           <h2 class=" text-muted fw-light mb-5">The Foundation
 </h2>
@@ -148,7 +147,7 @@
             </div>
         </div>
 
-       <div class="col-md-4 shadow-sm bg-white" >
+       <div class="col-md-4 bg-white" >
         <img src="https://images.ctfassets.net/br4ichkdqihc/10w71bSIeVgaoIh6yXeizl/8a957789d211b7647babd1edc28bbdb1/foundation-4-w.jpg?w=800&h=640&q=50&fm=webp" width="650px" height="650px" alt="">            
         </div>
 

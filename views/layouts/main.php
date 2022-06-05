@@ -18,17 +18,27 @@ use app\core\Application;
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="./css/Boostrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
   <body>
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg  fixed-top" id="mainNav">
         <div class="container">
             <!-- <a class="navbar-brand"  href="#page-top"><img src="assets/img/navbar-logo.png"  wit alt="..." /></a> -->
             <div class="h3">
-                <span class="text-primary">02</span><span class="text-white">safe</span><span
-                    class="text-primary">.com</span>
+                <!-- <span class="text-primary">02</span><span class="text-white">safe</span><span
+                    class="text-primary">.com</span> -->
+                   <a href="http://localhost:8080"> <img src=".\assets\img\navbar-logo.png" width="210px" alt="logo"></a>
             </div>
             <button class="navbar-toggler w-25" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
@@ -39,24 +49,30 @@ use app\core\Application;
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto py-4 py-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#services">Alarm Systems</a>
+                        <a class="nav-link" href="http://localhost:8080/products">Products</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8080/packages">Packages</a>
+                    </li>
+
+                    
                    
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="http://localhost:8080/shop">Shop</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Contact</a></li>
+                  
+                   
                 </ul>
-                <button class="btn btn-primary fw-bold text-black ms-4">Call Us : 0661543451</button>
+                <span class="h4 mt-2 ms-3 text-muted"><i class="fa-solid fa-cart-plus"></i></span>
+
+                <button class="btn btn-primary fw-bold text-white ms-4">Build Your System</button>
             </div>
         </div>
     </nav>
   
 
-    <div>
+    <div class="mt-5">
         <?php if (Application::$app->session->getFlash('success')) : ?>
             <div class="alert alert-success">
                 <?php   echo  Application::$app->session->getFlash('success'); ?>
@@ -65,14 +81,58 @@ use app\core\Application;
         {{content}}
     </div>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <footer class="footer-59391 mt-3">
+        <div class="border-bottom pb-5 mb-4">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-3">
+                <form action="#" class="subscribe mb-4 mb-lg-0">
+                  <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Subscribe for our news letter">
+                  </div>
+                  <button class="btn mt-2 btn-primary">Submit</button>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+                </form>
+              </div>
+              <div class="col-lg-6 text-lg-center">
+                <ul class="list-unstyled nav-links nav-left mb-4 mb-lg-0">
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Shop </a></li>
+                </ul>
+              </div>
+              <div class="col-lg-3">
+                <ul class="list-unstyled nav-links social nav-right text-lg-right">
+                  <li><a href="#"><span><i class=" fa-brands fa-facebook"></i></span></a></li>
+                  <li><a href="#"><span ><i class="fa-brands fa-twitter"></i></span></a></li>
+                  <li><a href="#"><span ><i class="fa-brands fa-discord"></i></span></a></li>
+                  <li><a href="#"><span ><i class="fa-brands fa-instagram"></i></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-center site-logo order-1 order-lg-2 mb-3 mb-lg-0">
+              <!-- <a href="#" class="m-0 p-0">02safe.com</a> -->
+              <img src=".\assets\img\navbar-logo.png" width="190px" alt="">
+            </div>
+            <div class="col-lg-4 order-2 order-lg-1 mb-3 mb-lg-0">
+              <ul class="list-unstyled nav-links m-0 nav-left">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#"> Contact</a></li>
+              </ul>
+            </div>
+            
+            <div class="col-lg-4 text-lg-right order-3 order-lg-3">
+              <p class="m-0 text-muted"><small>&copy; 2022. All Rights Reserved. with <span class="text-danger"><i class="fa-solid fa-heart"></i></span> By Laghbar</small></p>
+            </div>
+          </div>
+        </div>
+
+    </footer>
+
   </body>
 </html>

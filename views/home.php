@@ -1,5 +1,5 @@
 <header class="masthead"></header>
-<div class="container">
+<div class="container ">
  
   <!-- Services-->
   <section class="page-section bg-light" id="services">
@@ -44,7 +44,9 @@
   <!-- end services -->
 
   <!-- Why Why Us -->
-  <h1 class="text-secondary text-center mb-3">Compare Your Security Options</h1>
+  <h2 class="section-heading p-5 text-center text-secondary">
+  Compare Your Security Options
+        </h2>
   <div class="row d-flex justify-content-around">
     <div class="col-md-5 bg-white p-3">
       <P class="text-white h5 p-2 bg-secondary">Other DIY systems</P>
@@ -72,10 +74,10 @@
   <!-- end why us -->
 
   <!-- packages -->
-  <div class="bg-white p-3 mt-2">
-    <div class="head-title h2 p-5 fw-bold text-secondary  text-center">
+  <div class="bg-white p-3 mt-5">
+    <h2 class="head-title  p-5 fw-bold text-secondary  text-center">
       Find the right protection for your home
-    </div>
+    </h2>
     <div class="tables row  d-flex justify-content-around">
       <div class="table-1 p-4 col-md-4">
         <img src="https://www.adt.com/content/dam/adt7/2021-command-panel-images/product-bundle-secure-home%402x.png" width="200px" alt="">
@@ -110,8 +112,8 @@
   <!-- packages -->
 
   <!-- more reason to choose us -->
-  <div class="containaer p-4  ">
-    <p class="title fw-bold h2 text-center mb-4">More Reasons To Choose Us</p>
+  <div class="containaer p-4  mt-4">
+    <h2 class="title fw-bold text-secondary text-center mb-4">More Reasons To Choose Us</h2>
     <div class="first-row row text-center d-flex justify-content-around">
       <div class="col-md-3 hover-zoom p-4 m-2 bg-white shadow-lg">
         <p class="h4 ">Customized for your home</p>
@@ -149,59 +151,6 @@
 
 
 <!-- Footer -->
-<footer class="footer-59391">
-        <div class="border-bottom pb-5 mb-4">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-3">
-                <form action="#" class="subscribe mb-4 mb-lg-0">
-                  <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Enter your email">
-                  <button><span class="icon-keyboard_backspace"></span></button>
-                  </div>
-                </form>
-              </div>
-              <div class="col-lg-6 text-lg-center">
-                <ul class="list-unstyled nav-links nav-left mb-4 mb-lg-0">
-                  <li><a href="#">Terms Of Use</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Services</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-3">
-                <ul class="list-unstyled nav-links social nav-right text-lg-right">
-                  <li><a href="#"><span><i class=" fa-brands fa-facebook"></i></span></a></li>
-                  <li><a href="#"><span ><i class="fa-brands fa-twitter"></i></span></a></li>
-                  <li><a href="#"><span ><i class="fa-brands fa-discord"></i></span></a></li>
-                  <li><a href="#"><span ><i class="fa-brands fa-instagram"></i></span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-4 text-lg-center site-logo order-1 order-lg-2 mb-3 mb-lg-0">
-              <!-- <a href="#" class="m-0 p-0">02safe.com</a> -->
-              <img src=".\assets\img\navbar-logo.png" width="190px" alt="">
-            </div>
-            <div class="col-lg-4 order-2 order-lg-1 mb-3 mb-lg-0">
-              <ul class="list-unstyled nav-links m-0 nav-left">
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            
-            <div class="col-lg-4 text-lg-right order-3 order-lg-3">
-              <p class="m-0 text-muted"><small>&copy; 2022. All Rights Reserved. with <span class="text-danger"><i class="fa-solid fa-heart"></i></span> By Laghbar</small></p>
-            </div>
-          </div>
-        </div>
-
-    </footer>
 
 <!-- Footer -->
 
@@ -211,7 +160,7 @@
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="css/scripts.js"></script>
+<!-- <script src="css/scripts.js"></script> -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
 <!-- * *                               SB Forms JS                               * *-->
 <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
