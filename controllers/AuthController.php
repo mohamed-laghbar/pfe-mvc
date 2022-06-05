@@ -14,6 +14,31 @@ class AuthController extends Controller
         $this->setLayout('auth');
         return $this->render('login');
     }
+    public function products()
+    {
+        $this->setLayout('main');
+        return $this->render('products');
+    }
+
+    public function packages()
+    {
+        $this->setLayout('main');
+        return $this->render('packages');
+    }
+
+    public function buildSystem()
+    {
+        $this->setLayout('main');
+        return $this->render('buildSystem');
+    }
+
+
+
+    public function shop()
+    {
+        $this->setLayout('main');
+        return $this->render('shop');
+    }
 
     public function register(Request $request)
     {
@@ -35,5 +60,8 @@ class AuthController extends Controller
 
         return $this->render('register', [
             'model' => $user
-        ]);    }
+        ]);    
+    }
+
+    
 }
