@@ -32,7 +32,7 @@ use app\core\Application;
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
   <body>
-  <nav class="navbar navbar-expand-lg  fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg  " id="mainNav">
         <div class="container">
             <!-- <a class="navbar-brand"  href="#page-top"><img src="assets/img/navbar-logo.png"  wit alt="..." /></a> -->
             <div class="h3">
