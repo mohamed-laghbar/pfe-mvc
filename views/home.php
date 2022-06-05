@@ -49,7 +49,7 @@
         </h2>
   <div class="row d-flex justify-content-around">
     <div class="col-md-5 bg-white p-3">
-      <P class="text-white h5 p-2 bg-secondary">Other DIY systems</P>
+      <P class="text-white h5 p-2 bg-secondary">TRADITIONAL HOME SECURITY</P>
       <div>
         <P><span class="text-danger h4"><i class="fa-solid fa-circle-xmark"></i></span> 36 month contract, monitoring
           costs $37-$53/month</P>
@@ -59,7 +59,7 @@
     </div>
 
     <div class="col-md-5 bg-white p-3 ">
-      <P class=" text-black h5 p-2 bg-primary">02Safe.com System</P>
+      <P class=" text-white h5 p-2 bg-primary">02SAFE: THE BETTER WAY</P>
       <div>
         <P><span class="text-success h4"><i class="fa-solid fa-circle-check"></i></span> No contracts, No Monthly Fees
         </P>
@@ -67,11 +67,48 @@
           landline required</P>
         <P><span class="text-success h4"><i class="fa-solid fa-circle-check"></i></span> Easy to setup yourself in no
           time</P>
-        <button class="btn btn-primary text-center fw-bold text-black">Protect your house now!</button>
+      <a href="http://localhost:8080/shop"> <button class="btn btn-primary text-center fw-bold text-white">Protect your house now!</button></a> 
       </div>
     </div>
   </div>
   <!-- end why us -->
+
+
+
+
+  <div class="row mt-5 d-flex justify-content-center">
+    <div class="col-md-5 bg-white ">
+    <img width="650" height="600" src="./assets/img/GIF1.GIF" alt="">
+    </div>
+
+    <div class="col-md-5 bg-white p-5 ">
+      <div class="d-flex  flex-column">
+      <p class="title-big fw-light" >How it works</p>
+      <p class="h5 fw-bold text-muted"><span class="text-danger h3 ">1-</span> CUSTOMIZE YOUR SYSTEM</p>
+      <p>Our experts will walk you through which security sensors and cameras your home needs and ship them to your front door in less than a week.</p>
+
+
+      <p class="h5 fw-bold text-muted"><span class="text-danger h3 ">2-</span>SET UP IN MINUTES</p>
+      <p>Install your system with no tools needed. Just plug it in. Or let one of our pros do it for you.</p>
+
+
+      <p class="h5 fw-bold text-muted"><span class="text-danger h3 ">3-</span>WE PROTECT YOUR HOME</p>
+      <p>Sensors guard every room and entry point. If danger is detected, our monitoring center will call you and dispatch emergency response.</p>
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
 
   <!-- packages -->
   <div class="bg-white p-3 mt-5">
