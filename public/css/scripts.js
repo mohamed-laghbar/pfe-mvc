@@ -55,6 +55,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 
-document.getElementById('vid').play();
+// increase button 
 
+
+//   end increase button
    
