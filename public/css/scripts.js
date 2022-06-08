@@ -55,8 +55,8 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 
-// increase button 
+// side bar admin 
 
 
-//   end increase button
+//   end sidebar admin
    

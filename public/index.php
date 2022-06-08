@@ -28,8 +28,15 @@ $app->router->post('/products', [AuthController::class, 'products']);
 $app->router->get('/shop', [AuthController::class, 'shop']);
 $app->router->post('/shop', [AuthController::class, 'shop']);
 
+$app->router->get('/orders', [AuthController::class, 'orders']);
+$app->router->post('/orders', [AuthController::class, 'orders']);
+
 $app->router->get('/packages', [AuthController::class, 'packages']);
 $app->router->post('/packages', [AuthController::class, 'packages']);
+
+$app->router->get('/card', [AuthController::class, 'card']);
+$app->router->post('/card', [AuthController::class, 'card']);
+
 
 $app->router->get('/build-your-system', [AuthController::class, 'build_your_system']);
 $app->router->post('/build-your-system', [AuthController::class, 'build_your_system']);
