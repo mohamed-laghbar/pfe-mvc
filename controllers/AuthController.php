@@ -9,6 +9,14 @@ use app\models\User;
 
 class AuthController extends Controller
 {
+    public function orders()
+    {
+        $this->setLayout('sidebar');
+        return $this->render('orders');
+    }
+
+
+
     public function login()
     {
         $this->setLayout('auth');
@@ -20,16 +28,22 @@ class AuthController extends Controller
         return $this->render('products');
     }
 
+    public function card()
+    {
+        $this->setLayout('main');
+        return $this->render('card');
+    }
+
     public function packages()
     {
         $this->setLayout('main');
         return $this->render('packages');
     }
 
-    public function buildSystem()
+    public function build_your_system()
     {
         $this->setLayout('main');
-        return $this->render('buildSystem');
+        return $this->render('build-your-system');
     }
 
 
