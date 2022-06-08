@@ -33,7 +33,7 @@ use app\core\Application;
 </head>
   <body>
   <nav class="navbar navbar-expand-lg  " id="mainNav">
-        <div class="container">
+        <div class="container-fluid">
             <!-- <a class="navbar-brand"  href="#page-top"><img src="assets/img/navbar-logo.png"  wit alt="..." /></a> -->
             <div class="h3">
                 <!-- <span class="text-primary">02</span><span class="text-white">safe</span><span
@@ -47,7 +47,10 @@ use app\core\Application;
                 <i class="bg-white fas fa-bars ms-1"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                <ul class="navbar-nav mx-auto py-4 py-lg-0">
+                <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8080">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost:8080/products">Products</a>
                     </li>
@@ -60,19 +63,19 @@ use app\core\Application;
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost:8080/shop">Shop</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Contact</a></li>
-                  
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:8080/contact">Contact</a></li>
+                    <li><a href="http://localhost:8080/card"><span class="h4   ms-3 text-muted"><i class="fa-solid fa-cart-plus"></i></span></a></li>
+
                    
                 </ul>
-                <span class="h4 mt-2 ms-3 text-muted"><i class="fa-solid fa-cart-plus"></i></span>
 
-                <button class="btn btn-primary fw-bold text-white ms-4">Build Your System</button>
+                <a href="http://localhost:8080/build-your-system"><button class="btn btn-primary fw-bold text-white ms-4">Build Your System</button></a>
             </div>
         </div>
     </nav>
   
 
-    <div class="mt-5">
+    <div class="">
         <?php if (Application::$app->session->getFlash('success')) : ?>
             <div class="alert alert-success">
                 <?php   echo  Application::$app->session->getFlash('success'); ?>
@@ -96,16 +99,18 @@ use app\core\Application;
               </div>
               <div class="col-lg-6 text-lg-center">
                 <ul class="list-unstyled nav-links nav-left mb-4 mb-lg-0">
-                  <li><a href="#">Products</a></li>
-                  <li><a href="#">Shop </a></li>
+                  <li><a href="http://localhost:8080/product">Products</a></li>
+                  <li><a href="http://localhost:8080/shop">Shop </a></li>
+                  <li><a href="http://localhost:8080/packages">Packages </a></li>
+
                 </ul>
               </div>
               <div class="col-lg-3">
                 <ul class="list-unstyled nav-links social nav-right text-lg-right">
-                  <li><a href="#"><span><i class=" fa-brands fa-facebook"></i></span></a></li>
-                  <li><a href="#"><span ><i class="fa-brands fa-twitter"></i></span></a></li>
-                  <li><a href="#"><span ><i class="fa-brands fa-discord"></i></span></a></li>
-                  <li><a href="#"><span ><i class="fa-brands fa-instagram"></i></span></a></li>
+                  <li><a href="http://facebook.com"><span><i class=" fa-brands fa-facebook"></i></span></a></li>
+                  <li><a href="http://twitter.com"><span ><i class="fa-brands fa-twitter"></i></span></a></li>
+                  <li><a href="http://discord.com"><span ><i class="fa-brands fa-discord"></i></span></a></li>
+                  <li><a href="http://instagram.com"><span ><i class="fa-brands fa-instagram"></i></span></a></li>
                 </ul>
               </div>
             </div>
@@ -122,7 +127,7 @@ use app\core\Application;
               <ul class="list-unstyled nav-links m-0 nav-left">
                 <li><a href="#">Terms of Use</a></li>
                 <li><a href="#">Privacy</a></li>
-                <li><a href="#"> Contact</a></li>
+                <li><a href="http://localhost:8080/contact"> Contact</a></li>
               </ul>
             </div>
             
