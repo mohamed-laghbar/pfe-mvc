@@ -27,10 +27,7 @@ class SiteController extends Controller
         // return Application::$app->router->renderView('home', $params);
     }
 
-    public function khalid()
-    {
-        return $this->render('khalid');
-    }
+   
 
     public function contact()
     {

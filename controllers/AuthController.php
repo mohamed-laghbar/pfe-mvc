@@ -10,15 +10,24 @@ use app\models\User;
 class AuthController extends Controller
 {
     public function orders()
-    {
+     {
+    //     if(empty($_SESSION['user']))
+    //     {
+    //         $this->setLayout('main');
+    //     return $this->render('packages');
+    //     exit;
+    //     } else 
         $this->setLayout('sidebar');
         return $this->render('orders');
     }
+    
+
 
 
 
     public function login()
     {
+        
         $this->setLayout('auth');
         return $this->render('login');
     }
@@ -34,11 +43,7 @@ class AuthController extends Controller
         return $this->render('card');
     }
 
-    public function packages()
-    {
-        $this->setLayout('main');
-        return $this->render('packages');
-    }
+   
 
     public function build_your_system()
     {

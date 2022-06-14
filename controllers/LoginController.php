@@ -9,12 +9,16 @@ use app\core\Request;
 
 class LoginController extends  Controller{
 public function LoginAttempt(Request $request){
-    $login = new loginModel();
-if($request->isPost())  {
-     $login->GetUser();
-     
-}  
 
+    $login = new loginModel();
+    if($request->isPost() && $login->GetUser())  {
+        header('location:orders');
+    } else{
+        $this->setLayout('auth');
+        return $this->render('login',['errors'=>'Invalid Email or Password!']);
+
+    }
+    
 }
 
 
