@@ -1,6 +1,8 @@
 <?php
 
 use app\controllers\AuthController;
+use app\controllers\LoginController;
+use app\controllers\packagesController;
 use app\core\Application;
 use app\controllers\SiteController;
 use app\controllers\TestController;
@@ -25,14 +27,17 @@ $app->router->get('/', [new SiteController(), 'home']);
 $app->router->get('/products', [AuthController::class, 'products']);
 $app->router->post('/products', [AuthController::class, 'products']);
 
+
+
+
 $app->router->get('/shop', [AuthController::class, 'shop']);
 $app->router->post('/shop', [AuthController::class, 'shop']);
 
 $app->router->get('/orders', [AuthController::class, 'orders']);
 $app->router->post('/orders', [AuthController::class, 'orders']);
 
-$app->router->get('/packages', [AuthController::class, 'packages']);
-$app->router->post('/packages', [AuthController::class, 'packages']);
+$app->router->get('/packages', [packagesController::class, 'FetchPackages']);
+$app->router->post('/packages', [packagesController::class, 'storeID']);
 
 $app->router->get('/card', [AuthController::class, 'card']);
 $app->router->post('/card', [AuthController::class, 'card']);
@@ -46,7 +51,9 @@ $app->router->get('/contact', [new SiteController(), 'contact']);
 $app->router->post('/contact', [SiteController::class, 'handleContact']);
 
 $app->router->get('/login', [AuthController::class, 'login']);
-$app->router->post('/login', [AuthController::class, 'login']);
+$app->router->post('/login', [LoginController::class, 'LoginAttempt']);
+
+
 $app->router->get('/register', [AuthController::class, 'register']);
 $app->router->post('/register', [AuthController::class, 'register']);
 

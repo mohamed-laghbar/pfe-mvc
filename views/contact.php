@@ -6,30 +6,20 @@
             <div class=" d-flex align-items-center justify-content-center">
                 <div class="bg-white col-md-4">
                     <div class="p-4  contact-shadow">
-
                         <div>
                         <div class="input-field mt-3">
                     <span class="far fa-user p-2"></span>
                     <input type="text" name="name" placeholder="Your Name" required class="">
                    </div>
-
                    <i class=""></i>
-
                    <div class="input-field mt-3">
                     <span class="far fa-envelope p-2"></span>
                     <input type="text" name="email" placeholder="Email Address" required class="">
                 </div>
-
-
-
-
-
                 <div class="input-field mt-3">
                     <span class="fa fa-share p-2"></span>
                     <input type="text" name="subject"  placeholder="Subject"  class="">
                 </div>
-
-
                 
                 <div class="input-field mt-3">
                     
@@ -37,15 +27,10 @@
                     </textarea>
                         
                 </div>
-
                 <input type="submit" name="submit" value="Send" class="btn btn-primary mt-3 ">
                         
-
-
                       
                        
-
-
                     </div>
                 </div>
             </div>

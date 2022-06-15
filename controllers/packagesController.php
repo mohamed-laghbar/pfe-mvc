@@ -11,11 +11,12 @@ use app\core\Request;
 class packagesController extends Controller
 {
 
+ 
+
     
     public function FetchPackages(){
-
-        $foo = new packagesModel();       
-    $packages=   $foo->GetPackages();
+        $foo = new packagesModel(); 
+        $packages =   $foo->GetPackages();
     // echo $packages['title'];
      $this->setLayout('main');
      return $this->render('packages',[  'packages'  =>  $packages]);
@@ -23,12 +24,16 @@ class packagesController extends Controller
     
 }
 
-// foreach($packages as $value){
-//     echo $value['title'] ;
-//     echo $value['description'];
-//     echo $value['price'];
-//     echo $value['image'];
-// }
+
+
+public function storeID(Request $request){
+    $foo = new packagesModel(); 
+
+        return $foo->getID();
+
+    
+
+}
 
 
 

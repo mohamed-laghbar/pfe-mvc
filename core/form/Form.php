@@ -14,6 +14,8 @@ class Form
     public static function end()
     {
         echo '</form>';
+        // header('location:login');
+        exit;
     }
 
     public function field(Model $model, $attribute)

@@ -15,8 +15,16 @@
         <p class="text-muted "><span><i class="text-success fa-solid fa-check"></i></span> no phoneline needed</p><br>
         <div class="pricing mt-5 d-flex justify-content-evenly">
           <p class="h3 text-red  fw-light"><?php echo $value['price']; ?> <span class="oldprice"><?php echo $value['priceCompare']; ?></span></p>
-          <div><a href="" class=" btn bg-primary text-white    ">Add To Cart <span class="text-white"><i
-                  class="fa-solid fa-cart-plus"></i></span> </a> </div>
+
+          <form action="" method="POST">
+
+        <input type="hidden" value="<?= $value['id'] ?>">
+         <input type="submit" value="Add To Cart" class="btn bg-primary text-white"> 
+
+
+
+            </form>
+
         </div>
       </div>
 

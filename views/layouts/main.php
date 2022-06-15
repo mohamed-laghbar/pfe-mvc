@@ -29,7 +29,6 @@ use app\core\Application;
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
   <body>
   <nav class="navbar navbar-expand-lg  " id="mainNav">
@@ -62,9 +61,12 @@ use app\core\Application;
                    
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost:8080/shop">Shop</a>
-                    </li>
+                    </li>                   
+                    
                     <li class="nav-item"><a class="nav-link" href="http://localhost:8080/contact">Contact</a></li>
-                    <li><a href="http://localhost:8080/card"><span class="h4   ms-3 text-muted"><i class="fa-solid fa-cart-plus"></i></span></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link py-1" href="http://localhost:8080/card"><span class="text-black h4 py-3"><i class="ri-shopping-cart-fill "></i></span>  </a>
+                    </li>
 
                    
                 </ul>

@@ -55,8 +55,4 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 
-// side bar admin 
 
-
-//   end sidebar admin
-   

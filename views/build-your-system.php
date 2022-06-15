@@ -116,5 +116,7 @@
 
 
 </section>
-
+<div class="d-flex justify-content-center">
+<button class="btn btn-primary text-center btn-lg">Proccess to Checkout</button>
+</div>
 </div>
