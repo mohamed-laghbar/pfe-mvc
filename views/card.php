@@ -1,3 +1,5 @@
+
+
 <section class="">
   <div class="container   ">
     <div class="row d-flex justify-content-center ">
@@ -6,14 +8,23 @@
           <div class="card-header bg-wh py-3">
             <h5 class="mb-0">Cart - 2 items</h5>
           </div>
+          <?php 
+
+foreach($fooo as $value){
+  echo $value['title'];
+
+
+?>
           <div class="card-body ">
             <!-- Single item -->
             <div class="row">
               <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+
+
+
                 <!-- Image -->
                 <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/12a.webp"
-                    class="w-100" alt="Blue Jeans Jacket" />
+                  <img src="./assets/img/<?= $value['image'] ?>" width="130px" height="130px" class="" alt="<?= $value['image'] ?>" />
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
                   </a>
@@ -23,7 +34,7 @@
 
               <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                 <!-- Data -->
-                <p><strong>Blue denim shirt</strong></p>
+                <p><strong><?= $value['title'] ?></strong></p>
                 <p>Model:65775</p>
                 <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
                   title="Remove item">
@@ -52,7 +63,7 @@
 
                 <!-- Price -->
                 <p class="text-start text-md-center">
-                  <strong>$17.99</strong>
+                  <strong><?= $value['price'] ?></strong>
                 </p>
                 <!-- Price -->
               </div>
@@ -61,7 +72,7 @@
 
             <hr class="my-4" />
 
-           
+           <?php } ?>
             <!-- Single item -->
           </div>
         </div>

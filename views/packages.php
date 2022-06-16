@@ -1,4 +1,7 @@
-<?php  foreach($packages as $value) {?>
+<?php  
+if($packages){
+foreach($packages as $value)
+ {?>
 
 <section class="page-section  bg-light" id="services">
   <div class="container  ">
@@ -18,7 +21,7 @@
 
           <form action="" method="POST">
 
-        <input type="hidden" value="<?= $value['id'] ?>">
+        <input type="hidden" value="<?= $value['id'] ?>" name="id">
          <input type="submit" value="Add To Cart" class="btn bg-primary text-white"> 
 
 
@@ -37,7 +40,7 @@
     </div>
   </div>
 </section>
-<?php }?>
+<?php }}?>
 
 
 

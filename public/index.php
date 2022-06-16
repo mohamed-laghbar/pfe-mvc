@@ -3,6 +3,7 @@
 use app\controllers\AuthController;
 use app\controllers\LoginController;
 use app\controllers\packagesController;
+use app\controllers\CardController;
 use app\core\Application;
 use app\controllers\SiteController;
 use app\controllers\TestController;
@@ -37,10 +38,10 @@ $app->router->get('/orders', [AuthController::class, 'orders']);
 $app->router->post('/orders', [AuthController::class, 'orders']);
 
 $app->router->get('/packages', [packagesController::class, 'FetchPackages']);
-$app->router->post('/packages', [packagesController::class, 'storeID']);
+$app->router->post('/packages', [packagesController::class, 'storedID']);
 
-$app->router->get('/card', [AuthController::class, 'card']);
-$app->router->post('/card', [AuthController::class, 'card']);
+$app->router->get('/card', [CardController::class, 'card']);
+$app->router->post('/card', [CardController::class, 'card']);
 
 
 $app->router->get('/build-your-system', [AuthController::class, 'build_your_system']);

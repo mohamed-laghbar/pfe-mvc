@@ -40,11 +40,6 @@ class AuthController extends Controller
         return $this->render('products');
     }
 
-    public function card()
-    {
-        $this->setLayout('main');
-        return $this->render('card');
-    }
 
    
 

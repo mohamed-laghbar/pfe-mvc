@@ -4,32 +4,47 @@ namespace app\controllers;
 
 use app\core\Application;
 use app\core\Controller;
-use app\models\packagesModel;
+use app\models\PackagesModel;
 use app\core\Database;
 use app\core\Request;
+use app\controllers\CardController;
 
-class packagesController extends Controller
+class PackagesController extends Controller
 {
 
- 
+ public $id;
+ public $foo;
 
     
     public function FetchPackages(){
-        $foo = new packagesModel(); 
+        $foo = new PackagesModel(); 
         $packages =   $foo->GetPackages();
-    // echo $packages['title'];
+    // echo $Packages['title']; 
      $this->setLayout('main');
-     return $this->render('packages',[  'packages'  =>  $packages]);
+     return $this->render('Packages',[  'packages'  =>  $packages]);
     
     
 }
 
 
 
-public function storeID(Request $request){
-    $foo = new packagesModel(); 
+public function storedID(){
+    $foo = new PackagesModel(); 
+    $packages =   $foo->GetPackages();
 
-        return $foo->getID();
+       $foo->getID();
+    $fooo =  $foo->displayCart(); // stored the selected packages that the user add to cart and save them in $fooo as format of array
+
+    $this->setLayout('main');
+    return $this->render('Packages',[  'packages'  =>  $packages]);
+    
+    
+    }
+
+
+    
+    
+   
 
     
 
@@ -40,4 +55,3 @@ public function storeID(Request $request){
 
 
 
-}
