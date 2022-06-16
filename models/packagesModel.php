@@ -48,6 +48,8 @@ class PackagesModel extends DbModel {
         $test = $_SESSION['p_id'];
         array_push($test,$id);
         $_SESSION['p_id'] =  $test;
+
+        //  ['']
              
            
 
@@ -57,18 +59,16 @@ class PackagesModel extends DbModel {
 
 
     public function displayCart( ){
+        $fooo = [''];
 
-        
+        if($_SESSION['p_id']){
 
         $id_list =  implode(',',$_SESSION['p_id']) ;
-        
-       
-
-
         $stmt = Application::$app->db->prepare("SELECT * FROM packages WHERE id IN ($id_list)");
         $stmt->execute();
         $fooo = $stmt->fetchAll();
         return $fooo;
+    }
         
       
     }

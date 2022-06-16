@@ -15,11 +15,12 @@ class CardController extends PackagesController
         $newObj = new PackagesModel;
         $fooo =   $newObj->displayCart();
       
-       
+              
             $this->setLayout('main');
             return $this->render('card',[  'fooo'  =>  $fooo]);
         
-    
+
+
 
 
     }

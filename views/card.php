@@ -9,6 +9,7 @@
             <h5 class="mb-0">Cart - 2 items</h5>
           </div>
           <?php 
+          if($fooo){
 
 foreach($fooo as $value){
   echo $value['title'];
@@ -24,7 +25,7 @@ foreach($fooo as $value){
 
                 <!-- Image -->
                 <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                  <img src="./assets/img/<?= $value['image'] ?>" width="130px" height="130px" class="" alt="<?= $value['image'] ?>" />
+                  <img src="./assets/img/<?= $value['image'] ?>" width="130px" height="130px" class="" alt="" />
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
                   </a>
@@ -35,7 +36,7 @@ foreach($fooo as $value){
               <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                 <!-- Data -->
                 <p><strong><?= $value['title'] ?></strong></p>
-                <p>Model:65775</p>
+                
                 <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
                   title="Remove item">
                   <i class="fas fa-trash"></i>
@@ -62,8 +63,8 @@ foreach($fooo as $value){
                 <!-- Quantity -->
 
                 <!-- Price -->
-                <p class="text-start text-md-center">
-                  <strong><?= $value['price'] ?></strong>
+                <p class="text-start text-md-center h5">Price:
+                  <strong class="text-primary"><?= $value['price'] ?> </strong> <span class="oldprice text-muted"><?= $value['priceCompare']; ?></span>
                 </p>
                 <!-- Price -->
               </div>
@@ -72,9 +73,10 @@ foreach($fooo as $value){
 
             <hr class="my-4" />
 
-           <?php } ?>
+         
             <!-- Single item -->
           </div>
+          <?php }} ?>
         </div>
         <div class="card mb-4">
           <div class="card-body">
@@ -107,14 +109,10 @@ foreach($fooo as $value){
           </div>
           <div class="card-body">
             <ul class="list-group list-group-flush">
-              <li
-                class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                Products
-                <span>$53.98</span>
-              </li>
+        
               <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                 Shipping
-                <span>Gratis</span>
+                <span>Free Shipping </span>
               </li>
               <li
                 class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">

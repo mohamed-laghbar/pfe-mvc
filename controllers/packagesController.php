@@ -21,7 +21,7 @@ class PackagesController extends Controller
         $packages =   $foo->GetPackages();
     // echo $Packages['title']; 
      $this->setLayout('main');
-     return $this->render('Packages',[  'packages'  =>  $packages]);
+     return $this->render('Packages',[  'packages'  =>  $packages ] );
     
     
 }

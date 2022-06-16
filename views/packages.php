@@ -7,6 +7,7 @@ foreach($packages as $value)
   <div class="container  ">
 
     <div class="row  d-flex justify-content-center">
+      <!-- <div class="alert alert-success"></div> -->
       <div class="col-md-5  shadow-lg ps-5 pb-3 pt-3 bg-white">
 
         <h2 class=" text-muted fw-light mb-5"><?php echo $value['title']; ?></h2>
