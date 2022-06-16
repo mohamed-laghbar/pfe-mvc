@@ -10,11 +10,13 @@ class SiteController extends Controller
 {
 
     public function home()
-    {
-        $params = [
-            'name' => "Mohamed Laghbar"
-        ];
-        return $this->render('home', $params);
+    {   
+        if(!isset($_SESSION['p_id']))
+        {
+            $_SESSION['p_id'] = array();
+        }
+      
+        return $this->render('home');
         //  return Application::$app->router->renderView('home', $params);
     }
 

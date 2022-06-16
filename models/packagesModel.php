@@ -44,10 +44,7 @@ class PackagesModel extends DbModel {
     public function getID(){
         $id = $_POST['id'];
         if($id){
-            if(!isset($_SESSION['p_id']))
-            {
-                $_SESSION['p_id'] = array();
-            }
+
         $test = $_SESSION['p_id'];
         array_push($test,$id);
         $_SESSION['p_id'] =  $test;
