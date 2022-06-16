@@ -6,7 +6,7 @@
       <div class="col-md-8">
         <div class="card mb-4">
           <div class="card-header bg-wh py-3">
-            <h5 class="mb-0">Cart - 2 items</h5>
+            <h5 class="mb-0"><?php if(!empty($fooo)){ echo count($fooo);}  ?> Items In Cart</h5>
           </div>
           <?php 
           if($fooo){
@@ -122,7 +122,7 @@ foreach($fooo as $value){
                     <p class="mb-0">(including VAT)</p>
                   </strong>
                 </div>
-                <span><strong>$53.98</strong></span>
+                <span><strong></strong></span>
               </li>
             </ul>
 

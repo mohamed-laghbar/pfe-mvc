@@ -14,10 +14,10 @@ class CardController extends PackagesController
     public function card(){
         $newObj = new PackagesModel;
         $fooo =   $newObj->displayCart();
-      
+       $totalPrice = $newObj->totalPrice();
               
-            $this->setLayout('main');
-            return $this->render('card',[  'fooo'  =>  $fooo]);
+             $this->setLayout('main');
+             return $this->render('card',[  'fooo'  =>  $fooo , 'totalPrice' => $totalPrice] );
         
 
 
