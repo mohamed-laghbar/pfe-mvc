@@ -27,6 +27,11 @@ class Request
         return $this->method() === 'get';
     }
 
+    public function isDelete()
+    {
+        return $this->method() === 'delete';
+    }
+
     public function isPost()
     {
         return $this->method() === 'post';

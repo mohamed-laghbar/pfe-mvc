@@ -76,17 +76,16 @@ class PackagesModel extends DbModel {
 
     public function totalPrice(){
 
-        $price = [''];
-
+        
         if(!empty($_SESSION['p_id'])){
 
         $id_list =  implode(',',$_SESSION['p_id']) ;
-        $stmt = Application::$app->db->prepare("SELECT SUM(price) FROM packages WHERE id IN ($id_list)");
+        $stmt = Application::$app->db->prepare("SELECT price FROM packages WHERE id IN ($id_list)");
        $price = $stmt->execute();
-        return $price;
+        return $price ;
+            exit();
 
-
-    }
+    }else return '';
 
 }
 }

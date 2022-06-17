@@ -6,7 +6,7 @@
       <div class="col-md-8">
         <div class="card mb-4">
           <div class="card-header bg-wh py-3">
-            <h5 class="mb-0"><?php if(!empty($fooo)){ echo count($fooo);}  ?> Items In Cart</h5>
+            <h5 class="mb-0"><?php if(!empty($fooo)){ echo count($fooo);}else echo 0  ?> Items In Cart</h5>
           </div>
           <?php 
           if($fooo){
@@ -25,7 +25,7 @@ foreach($fooo as $value){
 
                 <!-- Image -->
                 <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                  <img src="./assets/img/<?= $value['image'] ?>" width="130px" height="130px" class="" alt="" />
+                  <img src="./assets/img/<?= $value['image'] ?>" width="160px" height="160px" class="" alt="" />
                   <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
                   </a>
@@ -37,14 +37,12 @@ foreach($fooo as $value){
                 <!-- Data -->
                 <p><strong><?= $value['title'] ?></strong></p>
                 
-                <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
-                  title="Remove item">
-                  <i class="fas fa-trash"></i>
-                </button>
-                <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
-                  title="Move to the wish list">
-                  <i class="fas fa-heart"></i>
-                </button>
+                  <!-- remove btn -->
+                  <form action="http://localhost:8080/card" method="post">
+                  <input type="hidden"  name="delete_id" value="<?= $value['id'] ?>">
+                  <input type="submit"  value="Remove" class="text-danger text-decoration-none ">
+                  </form>
+                  <!-- Remove btn -->
                 <!-- Data -->
               </div>
 
@@ -122,7 +120,9 @@ foreach($fooo as $value){
                     <p class="mb-0">(including VAT)</p>
                   </strong>
                 </div>
-                <span><strong></strong></span>
+                <span><strong><?php $result = 0 ; if(!empty($fooo)){ foreach($fooo as $key){ 
+                  $result += $key['price'];}
+                }  echo $result;?>.00 $</strong></span>
               </li>
             </ul>
 
