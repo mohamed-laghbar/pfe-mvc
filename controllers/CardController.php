@@ -31,10 +31,9 @@ $this->totalPrice = $this->newObj->totalPrice();
         $obj = new CardModel;
         if(!empty($_POST['delete_id'])){
         $p_id = $_POST['delete_id'];
-
           $obj->remove_id_from_session($p_id);
-          $this->setLayout('main');
-          return $this->render('card',[  'fooo'  =>  $this->fooo , 'totalPrice' => $this->totalPrice] );
+         return $this ->card();
+
 
         }
     }

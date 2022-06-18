@@ -29,7 +29,9 @@ class CardModel extends DbModel {
     }
 
     public function remove_id_from_session($id){
-        unset($_SESSION['p_id'][$id]); 
+     
+
+      $_SESSION['p_id'] = array_diff($_SESSION['p_id'] , [$id]);
       }
    
 }

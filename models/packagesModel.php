@@ -59,7 +59,6 @@ class PackagesModel extends DbModel {
 
 
     public function displayCart( ){
-        $fooo = [''];
 
         if($_SESSION['p_id']){
 
