@@ -17,24 +17,22 @@ class CardController extends PackagesController
 
     public function card(){
 $this->newObj    = new PackagesModel ;
-$this->fooo = $this->newObj->displayCart();
-$this->totalPrice = $this->newObj->totalPrice();
+$this->fooo = $this->newObj->display_product_cart();
+$this->totalPrice = $this->newObj->total_price_cart();
 
             //   print_r($totalPrice) ;
              $this->setLayout('main');
-             return $this->render('card',[  'fooo'  =>  $this->fooo , 'totalPrice' => $this->totalPrice] );
+             return $this->render('card',[  'fooo'  =>  $this->fooo , 'totalPrice' => $this->totalPrice ] );
         
     }
 
-    public function removeProduct(){
+    public function remove_product(){
        
         $obj = new CardModel;
         if(!empty($_POST['delete_id'])){
         $p_id = $_POST['delete_id'];
           $obj->remove_id_from_session($p_id);
          return $this ->card();
-
-
         }
     }
      

@@ -34,7 +34,7 @@ public function storedID(){
     $packages =   $foo->GetPackages();
 
        $foo->getID();
-    $fooo =  $foo->displayCart(); // stored the selected packages that the user add to cart and save them in $fooo as format of array
+    $fooo =  $foo->display_product_cart(); // stored the selected packages that the user add to cart and save them in $fooo as format of array
 
     $this->setLayout('main');
     return $this->render('Packages',[  'packages'  =>  $packages , 'alert' => 'Successfully added to your Shopping Cart']);

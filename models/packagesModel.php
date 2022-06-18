@@ -58,7 +58,7 @@ class PackagesModel extends DbModel {
     }
 
 
-    public function displayCart( ){
+    public function display_product_cart( ){
 
         if($_SESSION['p_id']){
 
@@ -73,7 +73,7 @@ class PackagesModel extends DbModel {
     }
 
 
-    public function totalPrice(){
+    public function total_price_cart(){
 
         
         if(!empty($_SESSION['p_id'])){

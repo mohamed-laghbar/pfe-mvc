@@ -41,7 +41,7 @@ $app->router->get('/packages', [packagesController::class, 'FetchPackages']);
 $app->router->post('/packages', [packagesController::class, 'storedID']);
 
 $app->router->get('/card', [CardController::class, 'card']);
-$app->router->post('/card', [CardController::class, 'removeProduct']);
+$app->router->post('/card', [CardController::class, 'remove_product']);
 
 
 $app->router->get('/build-your-system', [AuthController::class, 'build_your_system']);
