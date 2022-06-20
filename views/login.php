@@ -1,6 +1,6 @@
 <div class="wrapper  bg-white">
         <div class="h2 text-center"><img src=".\assets\img\navbar-logo.png" width="230px" alt=""></div>
-        <div class="h4 text-muted text-center pt-2">Enter your Admin Login Details</div>
+        <div class="h4 text-muted text-center pt-2">Enter your Login Details</div>
         <?php if(isset($errors)){?>
         <div class="alert alert-danger">
             <?= $errors ?>

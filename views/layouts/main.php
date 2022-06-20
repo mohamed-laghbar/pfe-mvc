@@ -140,6 +140,6 @@ use app\core\Application;
         </div>
 
     </footer>
-
+<script src="./css/scripts.js"></script>
   </body>
 </html>

@@ -11,12 +11,7 @@ class AuthController extends Controller
 {
     public function orders()
      {
-    //     if(empty($_SESSION['user']))
-    //     {
-    //         $this->setLayout('main');
-    //     return $this->render('packages');
-    //     exit;
-    //     } else 
+ 
         $this->setLayout('sidebar');
         return $this->render('orders');
     }
@@ -34,6 +29,9 @@ class AuthController extends Controller
         $this->setLayout('auth');
         return $this->render('login');
     }
+
+
+    
     public function products()
     {
         $this->setLayout('main');

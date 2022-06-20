@@ -3,6 +3,7 @@
 <section class="">
   <div class="container   ">
     <div class="row d-flex justify-content-center ">
+   
       <div class="col-md-8">
         <div class="card mb-4">
           <div class="card-header bg-wh py-3">
@@ -126,9 +127,9 @@ foreach($fooo as $value){
               </li>
             </ul>
 
-            <button type="button" class="btn btn-primary btn-lg btn-block">
+            <a href="http://localhost:8080/checkout"><button type="button" class="btn btn-primary btn-lg btn-block">
               Go to checkout
-            </button>
+            </button></a>
           </div>
         </div>
       </div>

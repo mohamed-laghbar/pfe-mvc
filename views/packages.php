@@ -1,5 +1,5 @@
 <?php if(isset($alert)){  ?>
-<div class="alert p-3 container-fluid text-center alert-success"> <?= $alert ?> </div> <?php } ?>
+<div id="box" class="alert p-3 container-fluid text-center alert-success"> <?= $alert ?> </div> <?php } ?>
 <?php  
 if($packages){
 foreach($packages as $value)

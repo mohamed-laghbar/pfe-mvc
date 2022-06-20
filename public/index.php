@@ -6,7 +6,7 @@ use app\controllers\packagesController;
 use app\controllers\CardController;
 use app\core\Application;
 use app\controllers\SiteController;
-use app\controllers\TestController;
+use app\controllers\checkoutController;
 
 require_once __DIR__.'/../vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
@@ -52,11 +52,14 @@ $app->router->get('/contact', [new SiteController(), 'contact']);
 $app->router->post('/contact', [SiteController::class, 'handleContact']);
 
 $app->router->get('/login', [AuthController::class, 'login']);
-$app->router->post('/login', [LoginController::class, 'LoginAttempt']);
+$app->router->post('/login', [LoginController::class, 'admin_login']);
 
 
 $app->router->get('/register', [AuthController::class, 'register']);
 $app->router->post('/register', [AuthController::class, 'register']);
+
+$app->router->get('/checkout', [checkoutController::class, 'index']);
+$app->router->post('/checkout', [checkoutController::class, 'index']);
 
 
 $app->router->get('/about', [TestController::class, 'about']);
