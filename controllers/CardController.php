@@ -34,6 +34,17 @@ $this->totalPrice = $this->newObj->total_price_cart();
           $obj->remove_id_from_session($p_id);
          return $this ->card();
         }
+
+        else if (!empty($_POST['checkout'])){
+
+            if(!empty($_SESSION['user_id'])){
+                header('location:checkout');
+
+            }
+            else{
+                header('location:register');
+            }
+        }
     }
      
 

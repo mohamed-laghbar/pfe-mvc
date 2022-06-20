@@ -29,8 +29,8 @@ class loginModel extends DbModel {
     public function GetUser( )
     {
 
-        $email = $_POST['email'];
-        $password = $_POST['password'];
+        $email = $_POST['user_email'];
+        $password = $_POST['user_password'];
 
                   
 
@@ -38,16 +38,14 @@ class loginModel extends DbModel {
             $statement->bindValue(":email", $email );
             $statement->bindValue(":password", $password );
             $statement->execute();
-            $count = $statement->rowCount();
-            return  $count;
-        
+            return $statement;
+            // $count = $statement->rowCount();
+            // return  $count;
+           
+             
     }
 
-  
-   
-    
 
-    
 }
 
 

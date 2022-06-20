@@ -126,10 +126,13 @@ foreach($fooo as $value){
                 }  echo $result;?>.00 $</strong></span>
               </li>
             </ul>
+                <form action="" method="POST">
+                <input type="hidden" >
 
-            <a href="http://localhost:8080/register"><button type="button" class="btn btn-primary btn-lg btn-block">
-              Go to checkout
-            </button></a>
+                <input type="submit" name="checkout" class=" btn btn-primary btn-lg btn-block" value="Procces to checkout">
+
+
+            </form>
           </div>
         </div>
       </div>

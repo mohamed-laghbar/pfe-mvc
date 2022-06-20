@@ -57,13 +57,23 @@ use app\core\Application;
                         <a class="nav-link" href="http://localhost:8080/packages">Packages</a>
                     </li>
 
+                  
+
                     
                    
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost:8080/shop">Shop</a>
-                    </li>                   
-                    
+                    </li>    
+
+                   
+
                     <li class="nav-item"><a class="nav-link" href="http://localhost:8080/contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8080/My_Account"><?php if (!empty($_SESSION['name'])) {
+                            echo $_SESSION['name'];
+                        } ?></a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link py-1" href="http://localhost:8080/card"><span class="text-black h4 py-3"><i class="ri-shopping-cart-fill "></i></span>  </a>
                     </li>

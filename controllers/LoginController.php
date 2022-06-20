@@ -16,21 +16,38 @@ class LoginController extends  Controller{
         return $this->render('login');
     }
 
-public function admin_login(){
 
-    $login = new loginModel();
-    if($login->GetUser() == 1){
-        $this->setLayout('main');
-        return $this->render('checkout');
-        
-   
-    } else{
-        $this->setLayout('main');
-        return $this->render('login',['errors'=>'Invalid Email or Password!']);
 
+    public function admin_login()
+    {
+
+        $login = new loginModel();
+        $stmt = $login->GetUser();
+        if($stmt->rowCount() == 1){
+            $result = $stmt->fetch();
+            $_SESSION['name'] = $result['email'];
+            $_SESSION['user_id'] = $result['id'];
+            header("location:checkout");
+        } else{
+            $this->setLayout('main');
+            return $this->render('login',['errors'=>'Invalid Email or Password!']);
+
+        }
+    }
+
+
+
+
+    public function is_user_logged()
+    {
+        if(isset($_SESSION['user_id'])){
+            return true;
+        } else{
+            return false;
+        }
     }
     
-}
+
 
 
 }
