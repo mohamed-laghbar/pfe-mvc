@@ -123,11 +123,73 @@ foreach($fooo as $value){
                 }  echo $result;?>.00 $</strong></span>
               </li>
             </ul>
-                <input type="submit" value="Place your Order" name="order" class=" btn btn-primary btn-lg btn-block">
-                </form>
+            <a href="" class=" btn btn-primary btn-lg btn-block mb-2  rounded-1"  data-bs-toggle="modal" data-bs-target="#exampleModal">Place your Order</a>
+            <!-- modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content ">
+      <div class="modal-header ">
+        <h5 class="modal-title " id="exampleModalLabel">Shipping informations</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-3">
+
+    
+ 
+
+              <form method="POST">
+
+                <div class="form-outline mb-2">
+                    <label class="form-label" for="">Your Name:</label>
+                  <input type="text" name="order-name" value="<?php if(!empty($_SESSION['user_name'])) {echo $_SESSION['user_name'];}  ?>" id="form3Example1cg" class="form-control form-control-lg" />
+                </div>
+
+                <div class="form-outline mb-2">
+                    <label class="form-label" for="">Your Email:</label>
+                  <input type="email" name="order-email" id="form3Example3cg" value="<?php if(!empty($_SESSION['user_email'])) {echo $_SESSION['user_email'];} ?>" class="form-control form-control-lg" />
+                </div>
+
+
+                <div class="form-outline mb-2">
+                    <label class="form-label" for="">Address:</label>
+                  <input type="text" name="order_adress"  id="form3Example3cg" value="<?php if(!empty($_SESSION['user_adress'])) {echo $_SESSION['user_adress'];} ?>" class="form-control form-control-lg" />
+                </div>
+
+                <div class="form-outline mb-2">
+                    <label class="form-label" for="">Phone Number:</label>
+                  <input type="phone" name="order_phone" id="form3Example3cg" value="<?php if(!empty($_SESSION['user_phone'])) {echo $_SESSION['user_phone'];}  ?>" class="form-control form-control-lg" />
+                </div>
+
+
+
+
+                <input type="submit" name="user_submit"  class="btn btn-success btn-block btn-lg rounded-1 " value="Order Now">
+
+               
+
+              </form>
+
+           
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger bg-danger btn-block btn-lg rounded-1 " data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            <!-- modal end -->
+                <a class=" btn bg-warning text-black btn-lg btn-block rounded-1" href="http://localhost:8080/card">Back to Shopping Cart</a>
+        </form>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+
+

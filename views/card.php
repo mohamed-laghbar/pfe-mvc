@@ -129,7 +129,7 @@ foreach($fooo as $value){
                 <form action="" method="POST">
                 <input type="hidden" >
 
-                <input type="submit" name="checkout" class=" btn btn-primary btn-lg btn-block" value="Procces to checkout">
+                <input type="submit" name="checkout" class=" btn btn-primary btn-lg btn-block rounded-1" value="Procces to checkout">
 
 
             </form>

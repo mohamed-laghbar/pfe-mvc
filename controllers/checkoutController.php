@@ -8,6 +8,7 @@ use app\models\PackagesModel;
 use app\core\Database;
 use app\core\Request;
 use app\models\CardModel;;
+use app\models\CheckoutModel;;
 
 class CheckoutController extends CardController
 {
@@ -23,7 +24,9 @@ class CheckoutController extends CardController
     }
 
    
-            
+            public function send_order(){
+                return ('send_order');
+            }
     
 
         

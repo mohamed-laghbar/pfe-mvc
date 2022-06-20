@@ -56,7 +56,7 @@ $app->router->get('/login', [LoginController::class, 'login']);
 $app->router->post('/login', [LoginController::class, 'admin_login']);
 
 $app->router->get('/checkout', [CheckoutController::class, 'checkout_form']);
-$app->router->post('/checkout', [CheckoutController::class, 'test']);
+$app->router->post('/checkout', [CheckoutController::class, 'send_order']);
 
 
 

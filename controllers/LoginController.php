@@ -25,8 +25,11 @@ class LoginController extends  Controller{
         $stmt = $login->GetUser();
         if($stmt->rowCount() == 1){
             $result = $stmt->fetch();
-            $_SESSION['name'] = $result['email'];
+            $_SESSION['user_name'] = $result['name'];
             $_SESSION['user_id'] = $result['id'];
+            $_SESSION['user_email'] = $result['email'];
+            $_SESSION['user_phone'] = $result['phone'];
+            $_SESSION['user_adress'] = $result['adress'];
             header("location:checkout");
         } else{
             $this->setLayout('main');

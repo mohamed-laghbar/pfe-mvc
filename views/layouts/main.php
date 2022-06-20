@@ -69,10 +69,13 @@ use app\core\Application;
 
                     <li class="nav-item"><a class="nav-link" href="http://localhost:8080/contact">Contact</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost:8080/My_Account"><?php if (!empty($_SESSION['name'])) {
-                            echo $_SESSION['name'];
+                        <a class="nav-link text-danger text-decoration-underline fw-bolder" href="http://localhost:8080/My_Account"><?php if (!empty($_SESSION['user_name'])) {
+                            echo 'Welcome '.$_SESSION['user_name'];
                         } ?></a>
                     </li>
+
+
+                    
 
                     <li class="nav-item">
                         <a class="nav-link py-1" href="http://localhost:8080/card"><span class="text-black h4 py-3"><i class="ri-shopping-cart-fill "></i></span>  </a>
