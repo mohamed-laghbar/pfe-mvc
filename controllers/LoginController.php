@@ -8,16 +8,24 @@ use app\core\Database;
 use app\core\Request;
 
 class LoginController extends  Controller{
+
+    public function login()
+    {
+        
+        $this->setLayout('main');
+        return $this->render('login');
+    }
+
 public function admin_login(){
 
     $login = new loginModel();
     if($login->GetUser() == 1){
-        $this->setLayout('sidebar');
-        return $this->render('orders');
+        $this->setLayout('main');
+        return $this->render('checkout');
         
    
     } else{
-        $this->setLayout('auth');
+        $this->setLayout('main');
         return $this->render('login',['errors'=>'Invalid Email or Password!']);
 
     }

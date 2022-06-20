@@ -127,7 +127,7 @@ foreach($fooo as $value){
               </li>
             </ul>
 
-            <a href="http://localhost:8080/checkout"><button type="button" class="btn btn-primary btn-lg btn-block">
+            <a href="http://localhost:8080/register"><button type="button" class="btn btn-primary btn-lg btn-block">
               Go to checkout
             </button></a>
           </div>

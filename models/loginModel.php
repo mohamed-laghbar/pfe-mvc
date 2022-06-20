@@ -34,7 +34,7 @@ class loginModel extends DbModel {
 
                   
 
-            $statement = Application::$app->db->prepare("SELECT * FROM login WHERE email = :email AND password = :password");
+            $statement = Application::$app->db->prepare("SELECT * FROM users WHERE email = :email AND password = :password");
             $statement->bindValue(":email", $email );
             $statement->bindValue(":password", $password );
             $statement->execute();

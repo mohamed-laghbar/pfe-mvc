@@ -1,7 +1,7 @@
 
 <?php 
 
-class m0003_packages 
+class m0002_packages 
 {
 
     public function up()

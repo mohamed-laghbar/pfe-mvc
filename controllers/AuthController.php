@@ -19,19 +19,10 @@ class AuthController extends Controller
 
 
 
+ 
 
 
 
-
-    public function login()
-    {
-        
-        $this->setLayout('auth');
-        return $this->render('login');
-    }
-
-
-    
     public function products()
     {
         $this->setLayout('main');

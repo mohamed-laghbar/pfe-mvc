@@ -1,17 +1,17 @@
+
 <?php 
 
-class m0001_initial 
+class m0001_admin 
 {
 
     public function up()
     {
         $db = \app\core\Application::$app->db;
-        $SQL = "CREATE TABLE users(
+        $SQL = "CREATE TABLE admin(
                     id INT AUTO_INCREMENT PRIMARY KEY,
-                    email VARCHAR(255) NOT NULL,
-                    firstname VARCHAR(255) NOT NULL,
-                    lastname VARCHAR(255) NOT NULL,
-                    status TINYINT NOT NULL,
+                    role_id INT (10) NOT NULL,
+                    email VARCHAR(50) NOT NULL,
+                    password VARCHAR(80) NOT NULL,
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                     ) ENGINE=INNODB; 
             ";
@@ -21,7 +21,7 @@ class m0001_initial
     public function down()
     {
         $db = \app\core\Application::$app->db;
-        $SQL = "DROP TABLE users;";
+        $SQL = "DROP TABLE admin;";
         $db->pdo->exec($SQL);
     }
 
