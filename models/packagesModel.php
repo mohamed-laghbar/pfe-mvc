@@ -44,7 +44,7 @@ class PackagesModel extends DbModel {
     public function getID(){
         $id = $_POST['id'];
         if($id){
-
+           
         $test = $_SESSION['p_id'];
         array_push($test,$id);
         $_SESSION['p_id'] =  $test;
@@ -60,7 +60,7 @@ class PackagesModel extends DbModel {
 
     public function display_product_cart( ){
 
-        if($_SESSION['p_id']){
+        if(!empty($_SESSION['p_id'])){
 
         $id_list =  implode(',',$_SESSION['p_id']) ;
         $stmt = Application::$app->db->prepare("SELECT * FROM packages WHERE id IN ($id_list)");

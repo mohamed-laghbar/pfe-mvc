@@ -60,7 +60,7 @@ foreach($fooo as $value){
 
                 <!-- Price -->
                 <p class="text-start text-md-center h5">Price:
-                  <strong class="text-primary"><?= $value['price'] ?> </strong> <span class="oldprice text-muted"><?= $value['priceCompare']; ?></span>
+                  <strong class="text-primary"><?= $value['price'] ?>$ </strong><span class="oldprice text-muted"><?= $value['priceCompare']; ?></span>
                 </p>
                 <!-- Price -->
               </div>

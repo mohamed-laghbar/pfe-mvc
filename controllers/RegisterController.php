@@ -28,6 +28,12 @@ class RegisterController extends Controller
          $register->register_user();
         header('Location:login');
 
+    }
 
+    public function logout(){
+        unset($_SESSION['user_name']);    
+      
+        $this->setLayout('main');
+        return $this->render('home');
     }
 }

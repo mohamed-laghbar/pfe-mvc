@@ -32,6 +32,6 @@
                     <a href="#" class="text-danger" id="forgot">Forgot Password?</a>
                 </div>
             </div>
-            <input type="submit" id="submit" name="submit" class="btn btn-block btn-login text-center  w-100 my-3" value="Login">
+            <input type="submit" id="submit" name="submit" class="btn btn-block btn-login text-center rounded-1  w-100 my-3" value="Login">
         </form>
     </div>

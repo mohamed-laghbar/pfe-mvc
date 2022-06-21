@@ -21,6 +21,9 @@ $config = [
     ]
     ];
 
+    
+   
+
 $app = new Application(dirname(__DIR__), $config);
 
 // $app->router->get('/', 'home');
@@ -66,6 +69,8 @@ $app->router->post('/my_account', [CheckoutController::class, 'my_account']);
 $app->router->get('/register', [RegisterController::class, 'index']);
 $app->router->post('/register', [RegisterController::class, 'register']);
 
+$app->router->get('/logout', [RegisterController::class, 'logout']);
+$app->router->post('/logout', [RegisterController::class, 'logout']);
 
 $app->router->get('/about', [TestController::class, 'about']);
 

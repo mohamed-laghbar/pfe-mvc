@@ -11,14 +11,11 @@ class SiteController extends Controller
 
     public function home()
     {   
-        if(!isset($_SESSION['p_id']) || !isset($_SESSION['user_id'])){
+        if(!isset($_SESSION['p_id']) || !isset($_SESSION['user_id']) || $_SESSION['name'] = [] ){
             $_SESSION['p_id'] = [];
             $_SESSION['user_id'] = [];
             $_SESSION['name'] = [];
         }
-      
-
-
       
         return $this->render('home');
         //  return Application::$app->router->renderView('home', $params);
