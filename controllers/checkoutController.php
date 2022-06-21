@@ -14,7 +14,7 @@ class CheckoutController extends CardController
 {
  
     public function checkout_form(){
-        if(!empty($_SESSION['user_id'])){
+        if(!empty($_SESSION['user_name'])){
 
 
         $this->newObj    = new PackagesModel ;
