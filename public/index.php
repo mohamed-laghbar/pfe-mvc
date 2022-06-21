@@ -59,6 +59,9 @@ $app->router->get('/checkout', [CheckoutController::class, 'checkout_form']);
 $app->router->post('/checkout', [CheckoutController::class, 'send_order']);
 
 
+$app->router->get('/my_account', [CheckoutController::class, 'my_account']);
+$app->router->post('/my_account', [CheckoutController::class, 'my_account']);
+
 
 $app->router->get('/register', [RegisterController::class, 'index']);
 $app->router->post('/register', [RegisterController::class, 'register']);

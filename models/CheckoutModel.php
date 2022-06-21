@@ -28,7 +28,24 @@ class CheckoutModel extends DbModel {
         return [];
     }
 
-    
+    public function insert_orders(){
+        $id_list =  implode(',',$_SESSION['p_id']) ;
+
+
+        $db = Application::$app->db;
+        $SQL = "INSERT INTO orders(user_id, product_id, quantity ) VALUES (:user_id, :product_id, :quantity)";
+        $stmt = $db->pdo->prepare($SQL);
+        $stmt->bindParam(':user_id', $_SESSION['user_id']);
+        $stmt->bindParam(':product_id', $id_list);
+        $stmt->bindParam(':quantity', $_POST['quantity']);
+
+        $stmt->execute();
+        header('location:thankyou');
+    }
+
+    public function my_account(){
+        header('location:my_account');
+    }
 }
 
 

@@ -1,18 +1,18 @@
 
 <?php 
 
-class m0001_admin 
+class m0005_orders
 {
 
     public function up()
     {
         $db = \app\core\Application::$app->db;
-        $SQL = "CREATE TABLE admin(
+        $SQL = "CREATE TABLE orders(
                     id INT AUTO_INCREMENT PRIMARY KEY,
-                    role_id INT (10) NOT NULL,
-                    email VARCHAR(50) NOT NULL,
-                    password VARCHAR(80) NOT NULL,
-                   
+                    user_id INT (10) NOT NULL,
+                    product_id INT (10) NOT NULL,
+                    quantity INT (10) NOT NULL,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                     ) ENGINE=INNODB; 
             ";
         $db->pdo->exec($SQL);
@@ -21,7 +21,7 @@ class m0001_admin
     public function down()
     {
         $db = \app\core\Application::$app->db;
-        $SQL = "DROP TABLE admin;";
+        $SQL = "DROP TABLE orders;";
         $db->pdo->exec($SQL);
     }
 

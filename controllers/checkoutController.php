@@ -25,10 +25,20 @@ class CheckoutController extends CardController
 
    
             public function send_order(){
-                return ('send_order');
-            }
-    
+                $sql = new CheckoutModel;
+              return  $sql->insert_orders();
+          
 
+
+            }
+
+            public function my_account(){
+                $sql = new CheckoutModel;
+             
+              $this->setLayout('main');
+                     return $this->render('my_account');
+    
+            }
         
 
 

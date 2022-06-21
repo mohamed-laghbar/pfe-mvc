@@ -7,7 +7,7 @@
       <div class="col-md-8">
         <div class="card mb-4">
           <div class="card-header bg-wh py-3">
-            <h5 class="mb-0"><?php if(!empty($fooo)){ echo count($fooo);}else echo 0  ?> Items In Cart</h5>
+            <h5 class="mb-0"><?php if(!empty($fooo)){      echo count($fooo);  $_SESSION['items']= count($fooo);}else echo 0  ?> Items In Cart</h5>
           </div>
           <?php 
           if($fooo){
@@ -52,10 +52,7 @@ foreach($fooo as $value){
                 <div class="d-flex mb-4" style="max-width: 300px">
                  
 
-                  <div class="form-outline">
-                    <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control" />
-                    <label class="form-label" for="form1">Quantity</label>
-                  </div>
+           
 
 
                 </div>

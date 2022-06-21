@@ -13,6 +13,7 @@
           if($fooo){
 
 foreach($fooo as $value){
+
   echo $value['title'];
 
 
