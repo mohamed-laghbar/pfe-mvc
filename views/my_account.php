@@ -9,17 +9,17 @@
       <th scope="col">Order On</th>
     </tr>
   </thead>
-
-
   <tbody>
+  <?php foreach($fo as $value){ ?>
+
     <tr>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
+      <td><?= $value['title'] ?></td>
+      <td><?= $value['quantity'] ?></td>
+      <td><?= $value['price'] ?></td>
+      <td><?= $value['order_time'] ?></td>
     </tr>
 
-  
+  <?php }?>
   </tbody>
 </table>
 </div>

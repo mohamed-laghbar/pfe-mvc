@@ -75,16 +75,16 @@ use app\core\Application;
                     
 
                     <li class="nav-item">
-                        <a class="nav-link py-1 position-relative" href="http://localhost:8080/card" ><span class="text-black h4 py-3"><i class="ri-shopping-cart-fill "></i></span> <span class="text-danger position-absolute"><?php if(!empty($_SESSION['items'])){echo $_SESSION['items'];}  ?> 
+                        <a class="nav-link py-1 position-relative" href="http://localhost:8080/card" ><span class="text-black h4 py-3"><i class="ri-shopping-cart-fill "></i></span> <span class="text-danger position-absolute"><?php if(!empty($_SESSION['items'])){echo $_SESSION['items'];}else echo 0;  ?> 
 </span>  </a>
                     </li>
 
                    
                 </ul>
          
-                        <a class=" btn btn-danger fw-bold text-white" href="http://localhost:8080/my_account"><?php if (!empty($_SESSION['user_name'])) {
-                            echo 'Welcome '.$_SESSION['user_name'];
-                        } ?></a>
+                        <a  href="http://localhost:8080/my_account"><?php if (!empty($_SESSION['user_name'])) {?>
+                          <div class="btn btn-danger fw-bold text-white">Welcome  <?php echo $_SESSION['user_name'];
+                        } ?></div></a>
                   
 
                 <a href="http://localhost:8080/build-your-system"><button class="btn btn-primary fw-bold text-white ms-4">Build Your System</button></a>

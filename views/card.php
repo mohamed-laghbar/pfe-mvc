@@ -118,8 +118,8 @@ foreach($fooo as $value){
                     <p class="mb-0">(including VAT)</p>
                   </strong>
                 </div>
-                <span><strong><?php $result = 0 ; if(!empty($fooo)){ foreach($fooo as $key){ 
-                  $result += $key['price'];}
+                <span><strong><?php $result = 0 ; if(!empty($fooo)){ foreach($fooo as $val){ 
+                  $result += $val['price'];}
                 }  echo $result;?>.00 $</strong></span>
               </li>
             </ul>
