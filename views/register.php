@@ -9,37 +9,43 @@
             <div class="card-body p-5 ">
               <h2 class=" text-center mb-5">Registration Form </h2>
 
-              <form method="POST">
+              <form method="POST" id="form">
 
                 <div class="form-outline mb-2">
                     <label class="form-label" for="">Your Name:</label>
-                  <input type="text" name="user_name" id="form3Example1cg" class="form-control form-control-lg" />
+                  <input type="text" name="user_name" id="nom" class="shadow-none form-control form-control-lg" />
+                  <div class="text-danger fs-6" id="errorNom"></div>
                 </div>
 
                 <div class="form-outline mb-2">
                     <label class="form-label" for="">Your Email:</label>
-                  <input type="email" name="user_email" id="form3Example3cg" class="form-control form-control-lg" />
+                  <input type="email" name="user_email" id="email" class="shadow-none form-control form-control-lg" />
+                  <div class="text-danger fs-6" id="errorEmail"></div>
                 </div>
 
 
                 <div class="form-outline mb-2">
                     <label class="form-label" for="">Address:</label>
-                  <input type="text" name="user_adress" id="form3Example3cg" class="form-control form-control-lg" />
+                  <input type="text" name="user_adress" id="address" class="shadow-none form-control form-control-lg" />
+                  <div class="text-danger fs-6" id="errorAddress"></div>
                 </div>
 
                 <div class="form-outline mb-2">
                     <label class="form-label" for="">Phone Number:</label>
-                  <input type="phone" name="user_phone" id="form3Example3cg" class="form-control form-control-lg" />
-                </div>
+                    <input type="phone" name="user_phone" id="phone" class="shadow-none form-control form-control-lg" />
+                    <div class="text-danger fs-6" id="errorPhone"></div>
+                  </div>
 
                 <div class="form-outline mb-2">
                     <label class="form-label" for="">Password:</label>
-                  <input type="password" name="user_password" id="form3Example4cg" class="form-control form-control-lg" />
+                  <input type="password" name="user_password" id="password" class="shadow-none form-control form-control-lg" />
+                  <div class="text-danger fs-6" id="errorPassword"></div>
                 </div>
 
                 <div class="form-outline mb-2">
                     <label class="form-label" for="">Repeat your password:</label>
-                  <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+                  <input type="password" id="Cpassword" class="shadow-none form-control form-control-lg" />
+                  <div class="text-danger fs-6"  id="errorCpassword"></div>
                 </div>
 
 
