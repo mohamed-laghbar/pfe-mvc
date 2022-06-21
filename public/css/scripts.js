@@ -117,11 +117,13 @@ form.addEventListener("submit", (e) =>{
         e.preventDefault()
         errorPassword.textContent = 'Password is Empty'
         password.style.border = '1px solid red'
-    }else if(!regexPassword.test(password.value.trim())){
+    }
+    else if(!regexPassword.test(password.value.trim())){
         e.preventDefault()
         errorPassword.textContent = 'Easy Password try harder Password'
         password.style.border = '1px solid red'
-    }else{
+    }
+    else{
         errorPassword.textContent = ''
         password.style.border = ''
     }
@@ -130,25 +132,27 @@ form.addEventListener("submit", (e) =>{
         e.preventDefault()
         errorCpassword.textContent = 'Confirme Password is Empty'
         Cpassword.style.border = '1px solid red'
-    }else if(!regexPassword.test(Cpassword.value.trim())){
+    }
+    else if(!regexPassword.test(Cpassword.value.trim())){
         e.preventDefault()
         errorCpassword.textContent = 'Easy Confirme Password try harder Password'
         Cpassword.style.border = '1px solid red'
-    }else{
+    }
+    else{
         errorCpassword.textContent = ''
         Cpassword.style.border = ''
     }
 
-    if(password.value.trim() != Cpassword.value.trim()){
-        e.preventDefault()
-        errorPassword.textContent = 'Password Not Matched'
-        errorCpassword.textContent = 'Password Not Matched'
-        password.style.border = '1px solid red'
-        Cpassword.style.border = '1px solid red'
-    }else{
-        errorPassword.textContent = ''
-        errorCpassword.textContent = ''
-        password.style.border = ''
-        Cpassword.style.border = ''
-    }
+    // if(password.value.trim() != Cpassword.value.trim()){
+    //     e.preventDefault()
+    //     errorPassword.textContent = 'Password Not Matched'
+    //     errorCpassword.textContent = 'Password Not Matched'
+    //     password.style.border = '1px solid red'
+    //     Cpassword.style.border = '1px solid red'
+    // }else{
+    //     errorPassword.textContent = ''
+    //     errorCpassword.textContent = ''
+    //     password.style.border = ''
+    //     Cpassword.style.border = ''
+    // }
 })
