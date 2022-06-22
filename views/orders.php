@@ -1,3 +1,6 @@
+
+
+
 <div class="mt-5 container-md">
     <h1 class="p-3 ">Orders List:</h1>
 <table class="table">
@@ -20,10 +23,12 @@
     <td><?= $value['quantity'] ?></td>
     <td><?= $value['price'] ?></td>
     <td><?= $value['order_time'] ?></td>
-     
     </tr>
+    
 <?php }?>
 
   </tbody>
 </table>
+
+
 </div>
