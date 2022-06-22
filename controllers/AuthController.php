@@ -9,17 +9,6 @@ use app\models\User;
 
 class AuthController extends Controller
 {
-    public function orders()
-     {
- 
-        $this->setLayout('sidebar');
-        return $this->render('orders');
-    }
-    
-
-
-
- 
 
 
 

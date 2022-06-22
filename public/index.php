@@ -8,6 +8,7 @@ use app\core\Application;
 use app\controllers\SiteController;
 use app\controllers\RegisterController;
 use app\controllers\CheckoutController;
+use app\controllers\OrdersController;
 
 require_once __DIR__.'/../vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
@@ -33,13 +34,14 @@ $app->router->get('/products', [AuthController::class, 'products']);
 $app->router->post('/products', [AuthController::class, 'products']);
 
 
+$app->router->get('/orders', [OrdersController::class, 'render_orders']);
+$app->router->post('/orders', [OrdersController::class, 'products']);
 
 
 $app->router->get('/shop', [AuthController::class, 'shop']);
 $app->router->post('/shop', [AuthController::class, 'shop']);
 
-$app->router->get('/orders', [AuthController::class, 'orders']);
-$app->router->post('/orders', [AuthController::class, 'orders']);
+
 
 $app->router->get('/packages', [packagesController::class, 'FetchPackages']);
 $app->router->post('/packages', [packagesController::class, 'storedID']);

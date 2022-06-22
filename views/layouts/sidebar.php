@@ -36,10 +36,9 @@ use app\core\Application;
                 <div>
                     <a href="#" class="nav_logo"> <i class="fa-solid fa-store"></i></i> <span class="nav_logo-name ">02safe.com</span> </a>
                     <div class="nav_list">
-                        <a href="#" class="nav_link active"> <i class="fa-solid fa-cart-flatbed"></i> </i><span class="nav_name">Orders</span> </a>
-                        <a href="#" class="nav_link"> <i class="fa-solid fa-box-open"></i> <span class="nav_name">Products</span> </a>
-                        <a href="#" class="nav_link"> <i class='bx bx-line-chart nav_icon'></i> <span class="nav_name">Statistic</span> </a>
-                        <a href="#" class="nav_link"><i class='nav_icon bx bxs-user-detail'></i> <span class="nav_name">Admin</span> </a>
+                        <a href="http://localhost:8080/orders" class="nav_link active"> <i class="fa-solid fa-cart-flatbed"></i> </i><span class="nav_name">Orders</span> </a>
+                        <a href="http://localhost:8080/products_espace" class="nav_link"> <i class="fa-solid fa-box-open"></i> <span class="nav_name">Products</span> </a>
+                        <a href="http://localhost:8080/admin_espace" class="nav_link"><i class='nav_icon bx bxs-user-detail'></i> <span class="nav_name">Admin</span> </a>
                     </div>
                 </div>
                 <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
