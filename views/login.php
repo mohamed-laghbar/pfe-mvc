@@ -11,14 +11,14 @@
                 <div class="input-field">
                     <span class="far fa-user p-2"></span>
                     <input type="text" name="user_email" id="email" placeholder="Email Address" required class="">
-                    <!-- <div class="text-danger fs-6" id="errorEmail"></div> -->
+                    <div class="text-danger fs-6" id="errorEmail"></div>
                 </div>
             </div>
             <div class="form-group py-1 pb-2">
                 <div class="input-field">
                     <span class="fas fa-lock p-2"></span>
-                    <!-- <input type="password" placeholder="Enter your Password" id="password" name="user_password" required class=""> -->
-                    <!-- <div class="text-danger fs-6" id="errorPassword"></div> -->
+                    <input type="password" placeholder="Enter your Password" id="password" name="user_password" required class="">
+                    <div class="text-danger fs-6" id="errorPassword"></div>
                 </div>
             </div>
             <div class="d-flex align-items-start">

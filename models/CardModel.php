@@ -28,6 +28,10 @@ class CardModel extends DbModel {
         return [];
     }
 
+
+
+
+    
     public function remove_id_from_session($id){
      
 

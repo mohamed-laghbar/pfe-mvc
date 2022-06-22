@@ -56,7 +56,7 @@ $app->router->get('/contact', [new SiteController(), 'contact']);
 $app->router->post('/contact', [SiteController::class, 'handleContact']);
 
 $app->router->get('/login', [LoginController::class, 'login']);
-$app->router->post('/login', [LoginController::class, 'admin_login']);
+$app->router->post('/login', [LoginController::class, 'user_login']);
 
 $app->router->get('/checkout', [CheckoutController::class, 'checkout_form']);
 $app->router->post('/checkout', [CheckoutController::class, 'send_order']);
@@ -65,6 +65,8 @@ $app->router->post('/checkout', [CheckoutController::class, 'send_order']);
 $app->router->get('/my_account', [CheckoutController::class, 'my_account']);
 $app->router->post('/my_account', [CheckoutController::class, 'my_account']);
 
+$app->router->get('/admin', [LoginController::class, 'login_admin']);
+$app->router->post('/admin', [LoginController::class, 'check_admin_login']);
 
 $app->router->get('/register', [RegisterController::class, 'index']);
 $app->router->post('/register', [RegisterController::class, 'register']);

@@ -18,7 +18,7 @@ class LoginController extends  Controller{
 
 
 
-    public function admin_login()
+    public function user_login()
     {
 
         $login = new loginModel();
@@ -49,7 +49,34 @@ class LoginController extends  Controller{
             return false;
         }
     }
+
+
+    public function login_admin(){
+        if(!empty($_SESSION['admin_id'])){
+            $this->setLayout('sidebar');
+            return $this->render('orders'); 
+
+        }else
+        $this->setLayout('auth');
+        return $this->render('admin'); 
+     }
     
+
+     public function check_admin_login(){
+        $loginModel = new loginModel;
+       $stmt= $loginModel->get_admin_account($_POST['username'],$_POST['password']);
+     $result = count($stmt->fetchAll()) ;
+
+       if($result == 1){
+        $_SESSION['admin_id'] = $_POST['username'];
+        $this->setLayout('sidebar');
+        return $this->render('orders');
+         }else $this->setLayout('auth');
+       return $this->render('admin', ['errors'=>'Invalid Email or Password!']); 
+         
+     }
+
+
 
 
 

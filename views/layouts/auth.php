@@ -21,7 +21,6 @@
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="./css/Boostrap.css" rel="stylesheet" />
-      <script async src="./css/scripts.js"></script>
 
 
 
@@ -35,6 +34,8 @@
     </div>
     
     
+    <!-- <script  src="./css/scripts.js"></script> -->
+    <script  src="./css/admin.js"></script>
 
   </body>
 </html>

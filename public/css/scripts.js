@@ -75,6 +75,7 @@ form.addEventListener("submit", (e) =>{
         e.preventDefault()
         errorNom.textContent = "Name is Empty"
         nom.style.border = '1px solid red'
+        
     }else{
         errorNom.textContent = ''
         nom.style.border = ''
@@ -143,16 +144,10 @@ form.addEventListener("submit", (e) =>{
         Cpassword.style.border = ''
     }
 
-    // if(password.value.trim() != Cpassword.value.trim()){
-    //     e.preventDefault()
-    //     errorPassword.textContent = 'Password Not Matched'
-    //     errorCpassword.textContent = 'Password Not Matched'
-    //     password.style.border = '1px solid red'
-    //     Cpassword.style.border = '1px solid red'
-    // }else{
-    //     errorPassword.textContent = ''
-    //     errorCpassword.textContent = ''
-    //     password.style.border = ''
-    //     Cpassword.style.border = ''
-    // }
+
+
+   
 })
+
+
+console.log('hello world')

@@ -17,7 +17,7 @@ use app\core\Application;
 
     <link href="./css/style.css" rel="stylesheet" />
     <link href="" rel="stylesheet" />
-    <script src="./css/sidebar.js"></script>
+    <script defer src="./css/sidebar.js"></script>
 
 
 </head>
@@ -49,11 +49,7 @@ use app\core\Application;
         </div>
 
         <div class="">
-        <?php if (Application::$app->session->getFlash('success')) : ?>
-            <div class="alert alert-success">
-                <?php   echo  Application::$app->session->getFlash('success'); ?>
-            </div>
-        <?php endif; ?>
+        
         {{content}}
     </div>
     </body>

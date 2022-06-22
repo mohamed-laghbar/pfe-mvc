@@ -46,6 +46,20 @@ class loginModel extends DbModel {
     }
 
 
+    public function get_admin_account($email , $password )
+    {    
+
+            $statement = Application::$app->db->prepare("SELECT * FROM admin WHERE email = :email AND password = :password");
+            $statement->bindValue(":email", $email );
+            $statement->bindValue(":password", $password );
+            $statement->execute();
+            return $statement;
+            
+           
+             
+    }
+
+
 }
 
 
