@@ -69,8 +69,7 @@ class LoginController extends  Controller{
 
        if($result == 1){
         $_SESSION['admin_id'] = $_POST['username'];
-        $this->setLayout('sidebar');
-        return $this->render('orders');
+        header('location:orders');
          }else $this->setLayout('auth');
        return $this->render('admin', ['errors'=>'Invalid Email or Password!']); 
          
