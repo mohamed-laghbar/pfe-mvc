@@ -76,6 +76,12 @@ class LoginController extends  Controller{
          
      }
 
+     public function admin_lougout(){
+
+        unset($_SESSION['admin_id']);
+        header('location:/');
+     }
+
 
 
 

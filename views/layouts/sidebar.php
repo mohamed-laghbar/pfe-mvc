@@ -45,7 +45,7 @@ use app\core\Application;
                         <a href="http://localhost:8080/admin_espace" class="nav_link"><i class='nav_icon bx bxs-user-detail'></i> <span class="nav_name">Admin</span> </a>
                     </div>
                 </div>
-                <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+                <a href="http://localhost:8080/logout_admin" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
             </nav>
 
 

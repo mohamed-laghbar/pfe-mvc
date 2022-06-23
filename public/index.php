@@ -82,6 +82,9 @@ $app->router->post('/products_espace', [PackagesController::class, 'post_check']
 $app->router->get('/product_edit', [PackagesController::class, 'display_edit']);
 $app->router->post('/product_edit', [PackagesController::class, 'insert_product']);
 
+$app->router->get('/logout_admin', [LoginController::class, 'admin_lougout']);
+$app->router->post('/logout_admin', [LoginController::class, 'admin_lougout']);
+
 
 
 $app->run();
