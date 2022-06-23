@@ -76,7 +76,12 @@ $app->router->post('/register', [RegisterController::class, 'register']);
 $app->router->get('/logout', [RegisterController::class, 'logout']);
 $app->router->post('/logout', [RegisterController::class, 'logout']);
 
-$app->router->get('/about', [TestController::class, 'about']);
+$app->router->get('/products_espace', [PackagesController::class, 'display_packages_admin']);
+$app->router->post('/products_espace', [PackagesController::class, 'post_check']);
+
+$app->router->get('/product_edit', [PackagesController::class, 'display_edit']);
+$app->router->post('/product_edit', [PackagesController::class, 'insert_product']);
+
 
 
 $app->run();

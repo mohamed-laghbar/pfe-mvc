@@ -12,7 +12,7 @@ use app\controllers\CardModel;
 
 class PackagesController extends Controller
 {
-
+    
 
 
     
@@ -41,6 +41,54 @@ public function storedID(){
     
     
     }
+
+
+    public function display_packages_admin(){
+        $foo = new PackagesModel(); 
+        $packages =   $foo->GetPackages();
+     $this->setLayout('sidebar');
+     return $this->render('products_espace',[  'packages'  =>  $packages ] );
+    
+    }
+
+    public function post_check(){
+        if(isset($_POST['delete'])){
+             $foo = new PackagesModel(); 
+              $foo->delete_package();
+               return $this->display_packages_admin();
+                exit();
+
+        }
+
+        if(isset($_POST['edit'])){
+            $data = [
+            'id' => $_POST['id'],
+            'title' => $_POST['title'],
+            'description' => $_POST['description'],
+            'price' => $_POST['price'],
+            
+            ];
+            $this->setLayout('sidebar');
+          return  $this->render('product_edit' , [  'data'  =>  $data ]);
+          exit();
+        }
+
+
+    }
+
+    public function display_edit(){
+        $this->setLayout('sidebar');
+        return $this->render('product_edit' );
+        
+    }
+
+    public function insert_product(){
+        $foo = new PackagesModel;
+        $foo->insert_packages();
+        return $this->display_packages_admin();
+
+    }
+
 
 
     

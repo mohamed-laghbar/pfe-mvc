@@ -73,7 +73,8 @@ class PackagesModel extends DbModel {
     }
 
 
-    public function total_price_cart(){
+    public function total_price_cart()
+    {
 
         
         if(!empty($_SESSION['p_id'])){
@@ -86,13 +87,56 @@ class PackagesModel extends DbModel {
 
     }else return '';
 
+    }
+
+
+    public function insert_packages()
+     {
+
+        if (isset($_POST['insert'])) {
+            $image = $_FILES['image']['name'];
+
+
+            // Location
+            $target_file = './assets/img/'.$image;
+
+            move_uploaded_file($_FILES['image']['tmp_name'],$target_file);
+
+                $title = $_POST['title'];
+                $description = $_POST['description'];
+                $price = $_POST['price'];
+                
+          
+             
+                
+                $statement = Application::$app->db->prepare("INSERT INTO packages (image, title, description, price) VALUES (:image, :title, :description, :price)");
+                $statement->bindValue(":image", $image );
+                $statement->bindValue(":title", $title );
+                $statement->bindValue(":description", $description );
+                $statement->bindValue(":price", $price );
+                $statement->execute();
+      
+            }
+     }
+
+
+     public function delete_package(){
+        $id = $_POST['id'];
+        $statement = Application::$app->db->prepare("DELETE FROM packages WHERE id = $id ");
+        $statement->execute();
+
+     }
+
+
+
+
+
+
+
 }
-}
 
 
 
-
-
-
-
+ 
+  
 
