@@ -28,7 +28,7 @@ class OrdersModel extends DbModel{
 
     public function select_all_orders(){
         $db = Application::$app->db;
-        $SQL = "SELECT orders.quantity, orders.order_time, users.name, users.adress, packages.price,packages.title FROM (( orders INNER JOIN users ON orders.user_id = users.id) INNER JOIN packages on orders.product_id = packages.id)";
+        $SQL = "SELECT orders.quantity, orders.order_time, users.name, users.adress, packages.price,packages.title FROM (( orders INNER JOIN users ON orders.user_id = users.id) INNER JOIN packages on orders.product_id = packages.id  )";
         $stmt = $db->pdo->prepare($SQL);
         $stmt->execute();
         $orders = $stmt->fetchAll();

@@ -44,10 +44,16 @@ public function storedID(){
 
 
     public function display_packages_admin(){
-        $foo = new PackagesModel(); 
-        $packages =   $foo->GetPackages();
-     $this->setLayout('sidebar');
-     return $this->render('products_espace',[  'packages'  =>  $packages ] );
+        if(!empty($_SESSION['admin_id'])){
+          
+            $foo = new PackagesModel(); 
+            $packages =   $foo->GetPackages();
+         $this->setLayout('sidebar');
+         return $this->render('products_espace',[  'packages'  =>  $packages ] );
+  
+  
+         }else   header('location:admin');
+     
     
     }
 
@@ -77,8 +83,17 @@ public function storedID(){
     }
 
     public function display_edit(){
-        $this->setLayout('sidebar');
-        return $this->render('product_edit' );
+        if(!empty($_SESSION['admin_id'])){
+          
+            $foo = new PackagesModel(); 
+            $packages =   $foo->GetPackages();
+            $this->setLayout('sidebar');
+            return $this->render('product_edit' );
+  
+  
+         }else   header('location:admin');
+     
+    
         
     }
 
