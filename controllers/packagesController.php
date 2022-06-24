@@ -100,8 +100,7 @@ public function storedID(){
     public function insert_product(){
         $foo = new PackagesModel;
         $foo->insert_packages();
-        return $this->display_packages_admin();
-
+        return header('location:http://localhost:8080/products_espace');
     }
 
 

@@ -20,7 +20,7 @@ foreach($packages as $value)
         <p class="text-muted mb-1 "><span><i class="text-success fa-solid fa-check"></i></span> 24/7 alarm monitoring</p><br>
         <p class="text-muted "><span><i class="text-success fa-solid fa-check"></i></span> no phoneline needed</p><br>
         <div class="pricing mt-5 d-flex justify-content-evenly">
-          <p class="h3 text-red  fw-light"><?php echo $value['price']; ?> <span class="oldprice"><?php echo $value['priceCompare']; ?></span></p>
+          <p class="h3 text-success  fw-light">$<?php echo $value['price']; ?> <span class="oldprice"><?php echo $value['priceCompare']; ?></span></p>
 
           <form action="" method="POST">
 
